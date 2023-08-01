@@ -1,0 +1,14 @@
+/*
+Theme Name:   Astra Child
+Theme URI:    http://example.com/astra-child/
+Description:  Astra Child Theme
+Template:     astra
+*/
+
+.title {
+    font-size: 30pt;
+}
+
+.alert {
+    color: red;
+}
