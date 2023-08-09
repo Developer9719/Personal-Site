@@ -16,9 +16,14 @@ get_header();
 <!-- Display current media -->
 
 <?php 
+$remotePath = '/home/dh_9mx6wk/funandpractice.dreamhosters.com/wp-content/themes/astra-child/Media';
 $files = scandir('/home/dh_9mx6wk/funandpractice.dreamhosters.com/wp-content/themes/astra-child/Media'); 
 foreach ($files as $file) {
-  echo $file . "<br><br>";
+  if(is_dir($file)) {
+    echo '<a href="">' . $file . '</a>';
+  } else {
+    echo $file;
+  }
 }
 ?>
 
